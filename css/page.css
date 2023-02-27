@@ -1,0 +1,23 @@
+
+
+
+#search {
+        width: 60%;
+        padding: 20px;
+        margin: 60px;
+        background-color: white;
+        border: 1.5px solid rgba(79, 79, 79, 0.455);
+        border-radius: 5px;
+        color: #111;
+        font-size: 12px;
+        height: 40px;    
+        text-align: left;
+        letter-spacing: 2px;
+}
+
+div.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
