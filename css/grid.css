@@ -24,7 +24,7 @@ main {
   grid-area: main;
 }
 
-div.container {
+div.image-container {
     width: 60%;
     margin: 2rem; 
   }
