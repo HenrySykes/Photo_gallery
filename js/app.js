@@ -11,14 +11,23 @@ baguetteBox.run('.gallery');
 
 const searchBox = document.getElementById('search-box');
 searchBox.addEventListener('keyup', e => {
-    let currentValue = e.target.value.toLowerCase();
-    console.log(currentValue);
-    let search = document.querySelectorAll('data-caption');
-    search.forEach(photo => {
-        if (photo.textContent.toLowerCase().includes(currentValue)) {
-            photo.parentNode.parentNode.style.display = 'block';
-        } else {
-            photo.parentNode.parentNode.style.display = 'none';
-        }
-    })
+  let currentValue = e.target.value.toLowerCase();
+  console.log(currentValue);
+  let search = document.querySelectorAll('a[data-caption]');
+  search.forEach(photo => {
+    if (photo.getAttribute('data-caption').toLowerCase().includes(currentValue)) {
+      photo.parentNode.style.display = 'block';
+    } else {
+      photo.parentNode.style.display = 'none';
+    }
+  })
 });
+
+
+
+
+
+
+
+
+
